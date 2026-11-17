@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikunj Ramoliya — Senior Java & Full-Stack Engineer</title>
-  <meta name="description" content="Nikunj Ramoliya — Senior Java & Full-Stack Software Engineer with 5.4+ years building secure SaaS platforms with Java, Spring Boot, React and AWS." />
+  <meta name="description" content="Nikunj Ramoliya — Senior Java & Full-Stack Software Engineer with 5.6+ years building secure SaaS platforms with Java, Spring Boot, React and AWS." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -177,10 +177,11 @@
     }
     .job { position: relative; margin-bottom: 28px; }
     .job::before {
-      content: ""; position: absolute; left: -36px; top: 32px; width: 16px; height: 16px; border-radius: 50%;
+      content: ""; position: absolute; left: -36px; top: 50px; width: 16px; height: 16px; border-radius: 50%;
       background: var(--bg); border: 3px solid var(--accent); box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.12);
     }
     .job:nth-child(2)::before { border-color: var(--accent-2); box-shadow: 0 0 0 5px rgba(167, 139, 250, 0.12); }
+    .job:nth-child(3)::before { border-color: var(--accent-3); box-shadow: 0 0 0 5px rgba(52, 211, 153, 0.12); }
     .job-head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
     .job-title { font-family: var(--display); font-size: 1.35rem; font-weight: 600; }
     .job-company { color: var(--accent); font-weight: 500; }
@@ -195,6 +196,12 @@
     }
     .project strong { font-family: var(--display); font-size: 1.05rem; }
     .project span { color: var(--muted); font-size: 0.92rem; }
+    .project .clients {
+      display: inline-flex; align-items: center; gap: 6px; margin-left: auto;
+      font-size: 0.8rem; font-weight: 600; color: #a7f3d0;
+      background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.25);
+      padding: 4px 10px; border-radius: 999px;
+    }
     .project .award {
       display: inline-flex; align-items: center; gap: 6px; margin-left: auto;
       font-size: 0.8rem; font-weight: 600; color: #fde68a;
@@ -236,6 +243,7 @@
     }
     .big-num + small { color: var(--muted); font-size: 0.85rem; }
     .cert-list { list-style: none; margin-top: 18px; display: grid; gap: 10px; }
+    .cert-row { grid-template-columns: repeat(3, 1fr); }
     .cert-list li {
       display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 10px;
       background: rgba(255,255,255,0.03); border: 1px solid var(--border); font-size: 0.93rem;
@@ -269,7 +277,7 @@
       padding: 40px 0; border-top: 1px solid var(--border);
       color: var(--dim); font-size: 0.88rem;
     }
-    footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer .container { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
 
     /* Reveal animation */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -288,14 +296,14 @@
       .nav-links { display: none; }
       .hero { padding: 72px 0 60px; }
       .stats { grid-template-columns: 1fr 1fr; }
-      .services, .duo, .contact-grid, .skills { grid-template-columns: 1fr; }
+      .services, .duo, .contact-grid, .skills, .cert-row { grid-template-columns: 1fr; }
       section { padding: 72px 0; }
       .contact-box { padding: 44px 22px; }
       .timeline { padding-left: 26px; }
       .job::before { left: -26px; width: 14px; height: 14px; }
       .timeline::before { left: 5px; }
       .card { padding: 22px; }
-      .project .award { margin-left: 0; }
+      .project .award, .project .clients { margin-left: 0; }
     }
   </style>
 </head>
@@ -308,9 +316,9 @@
       <a href="#top" class="logo"><span class="logo-mark">NR</span>Nikunj Ramoliya</a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#experience">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -321,7 +329,7 @@
     <header class="hero">
       <h1>Hi, I'm Nikunj.<br /><span class="grad">I build SaaS that scales.</span></h1>
       <p class="lead">
-        <strong>5.4+ years</strong> designing secure, maintainable SaaS platforms across <strong>FinOps</strong>, <strong>CRM</strong> and <strong>call/lead management</strong>. I build <strong>Java &amp; Spring Boot microservices</strong> and React dashboards, handle <strong>AWS deployment &amp; CI/CD</strong>, <strong>lead and mentor engineering teams</strong>, and use <strong>AI-driven development</strong> with Claude Code to ship faster. Based in Ahmedabad, India.
+        <strong>5.6+ years</strong> designing secure, maintainable SaaS platforms across <strong>FinOps</strong>, <strong>CRM</strong>, <strong>call/lead management</strong> and <strong>ticket management</strong>. I build <strong>Java &amp; Spring Boot microservices</strong> and React dashboards, handle <strong>AWS deployment &amp; CI/CD</strong>, <strong>lead and mentor engineering teams</strong>, work with <strong>cross-functional teams</strong> to deliver features end to end, and use <strong>AI-driven development</strong> with Claude Code to ship faster. Based in Ahmedabad, India.
       </p>
       <div class="cta">
         <a href="#contact" class="btn btn-primary">
@@ -335,10 +343,10 @@
       </div>
 
       <div class="stats reveal">
-        <div class="stat"><div class="num">5.4<span>+</span></div><div class="label">Years of experience</div></div>
-        <div class="stat"><div class="num">2</div><div class="label">SaaS platforms shipped</div></div>
-        <div class="stat"><div class="num">3</div><div class="label">Product domains</div></div>
-        <div class="stat"><div class="num">8.76</div><div class="label">CGPA, B.E. Computer Eng.</div></div>
+        <div class="stat"><div class="num">5.6<span>+</span></div><div class="label">Years of experience</div></div>
+        <div class="stat"><div class="num">3</div><div class="label">SaaS products shipped</div></div>
+        <div class="stat"><div class="num">450<span>+</span></div><div class="label">Active clients served (Callyzer)</div></div>
+        <div class="stat"><div class="num">3</div><div class="label">Anthropic certifications</div></div>
       </div>
     </header>
 
@@ -346,7 +354,7 @@
     <section id="services">
       <div class="eyebrow reveal">What I do</div>
       <h2 class="reveal">End-to-end engineering,<br />from API to dashboard.</h2>
-      <p class="section-intro reveal">I bridge business stakeholders and engineering teams, turning requirements into secure, reliable software that ships.</p>
+      <p class="section-intro reveal">I bridge business stakeholders and cross-functional teams (Data, UI, Backend and DevOps), turning requirements into secure, reliable features that ship.</p>
 
       <div class="services">
         <div class="card reveal">
@@ -362,7 +370,7 @@
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 0 0 4.5 12.5 3.5 3.5 0 0 0 6 19h11.5z"/></svg></div>
           <h3>Cloud, Deployment &amp; FinOps</h3>
-          <p>AWS workflows with S3, Lambda, SQS and Step Functions, plus deployment, CI/CD pipelines, monitoring and alerting.</p>
+          <p>AWS workflows with S3, Lambda, SQS, SNS, Athena and Step Functions, plus deployment, CI/CD pipelines, and monitoring and alerting with Prometheus and Grafana.</p>
         </div>
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7"/></svg></div>
@@ -372,7 +380,7 @@
         <div class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <h3>Team Management &amp; Leadership</h3>
-          <p>Requirement gathering with stakeholders, sprint planning and task breakdown, code reviews, and mentoring junior developers.</p>
+          <p>Requirement gathering with stakeholders, working with cross-functional Data, UI, Backend and DevOps teams to deliver features, sprint planning, code reviews and mentoring junior developers.</p>
         </div>
         <div class="card wide reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
@@ -384,27 +392,19 @@
 
     <!-- Experience -->
     <section id="experience">
-      <div class="eyebrow reveal">Experience</div>
+      <div class="eyebrow reveal">Projects</div>
       <h2 class="reveal">Where I've built things.</h2>
-      <p class="section-intro reveal">Two product companies, two production SaaS platforms, from first commit to stable releases.</p>
+      <p class="section-intro reveal">Three production SaaS products, from first commit to stable releases.</p>
 
       <div class="timeline">
         <div class="job card reveal">
-          <div class="job-head">
-            <div>
-              <div class="job-title">Senior Software Engineer</div>
-              <div class="job-company">Prama Innovation · Ahmedabad</div>
-            </div>
-            <div class="job-date">2024 — Present</div>
-          </div>
-          <div class="project">
+          <div class="project" style="margin-top: 0;">
             <strong>Finomics</strong><span>FinOps Cloud Cost Management Platform</span>
-            <span class="award">★ Spotlight Award · Oct 2025</span>
           </div>
           <ul>
             <li>Built a SaaS platform giving businesses cost visibility, resource breakdowns, budget management and threshold-based alerts across AWS and other clouds.</li>
             <li>Gathered requirements directly from stakeholders and translated them into technical specs and development tasks.</li>
-            <li>Led collaboration across Data, UI, Backend and DevOps teams to deliver integrated features from design to deployment.</li>
+            <li>Worked with cross-functional Data, UI, Backend and DevOps teams to deliver integrated features from design through deployment.</li>
             <li>Developed full-stack features with Java, Spring Boot and Spring Security on PostgreSQL and a VMUI timeseries database.</li>
             <li>Built and shipped React JS dashboard features through the platform's initial phase.</li>
             <li>Ran sprint planning and code reviews, supported junior developers, and coordinated AWS infrastructure, monitoring and CI/CD with DevOps.</li>
@@ -415,18 +415,12 @@
         </div>
 
         <div class="job card reveal">
-          <div class="job-head">
-            <div>
-              <div class="job-title">Senior Java Developer</div>
-              <div class="job-company" style="color: var(--accent-2);">Webs Optimization Software Solution · Ahmedabad</div>
-            </div>
-            <div class="job-date">2021 — 2024</div>
-          </div>
-          <div class="project">
+          <div class="project" style="margin-top: 0;">
             <strong>Callyzer</strong><span>Lead &amp; Call Management System</span>
+            <span class="clients">● 450+ active clients</span>
           </div>
           <ul>
-            <li>Delivered a call and lead management platform with real-time call logging, lead tracking and CRM integration for sales teams.</li>
+            <li>Delivered a call and lead management platform serving <strong style="color:var(--text)">450+ active clients</strong>, with real-time call logging, lead tracking and CRM integration for sales teams.</li>
             <li>Developed and maintained backend services in Java and Spring Boot on a PostgreSQL-backed microservices architecture.</li>
             <li>Integrated Callyzer with a third-party CRM (CIM) for real-time lead synchronisation across teams.</li>
             <li>Used AWS S3 for storage and retrieval of call logs and assets.</li>
@@ -435,6 +429,20 @@
           </ul>
           <div class="tags">
             <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span><span class="tag">PostgreSQL</span><span class="tag">AWS S3</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="job card reveal">
+          <div class="project" style="margin-top: 0;">
+            <strong>Product &amp; Ticket Management System</strong><span>Support &amp; Issue Tracking Platform</span>
+          </div>
+          <ul>
+            <li>Built features for managing products and handling support tickets end to end: creation, assignment, status tracking and resolution.</li>
+            <li>Developed backend services and REST APIs in Java and Spring Boot to keep ticket workflows reliable for internal and client teams.</li>
+            <li>Built the user interface in React JS for creating, tracking and managing products and tickets.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React JS</span><span class="tag">REST APIs</span>
           </div>
         </div>
       </div>
@@ -450,7 +458,7 @@
         <div class="card skill-group reveal">
           <h3>Languages &amp; Frameworks</h3>
           <div class="chips">
-            <span class="chip">Java 8 / 11 / 17</span><span class="chip">JavaScript</span><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">Spring Data JPA</span><span class="chip">REST APIs</span><span class="chip">Microservices</span>
+            <span class="chip">Java 8 / 11 / 17</span><span class="chip">JavaScript</span><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">Spring Data JPA</span><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">System Design</span>
           </div>
         </div>
         <div class="card skill-group reveal">
@@ -462,39 +470,31 @@
         <div class="card skill-group reveal">
           <h3>Cloud &amp; Tools</h3>
           <div class="chips">
-            <span class="chip">AWS S3</span><span class="chip">Lambda</span><span class="chip">SQS</span><span class="chip">CloudWatch</span><span class="chip">Step Functions</span><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Postman</span><span class="chip">Claude Code</span><span class="chip">AI-Driven Development</span>
+            <span class="chip">AWS S3</span><span class="chip">Lambda</span><span class="chip">SQS</span><span class="chip">CloudWatch</span><span class="chip">Step Functions</span><span class="chip">SNS</span><span class="chip">Athena</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Postman</span><span class="chip">Claude Code</span><span class="chip">AI-Driven Development</span>
           </div>
         </div>
         <div class="card skill-group reveal">
           <h3>Practices</h3>
           <div class="chips">
-            <span class="chip">Agile / Scrum</span><span class="chip">Sprint Planning</span><span class="chip">Code Reviews</span><span class="chip">SOLID Principles</span><span class="chip">Requirement Gathering</span><span class="chip">Mentoring</span>
+            <span class="chip">Agile / Scrum</span><span class="chip">Sprint Planning</span><span class="chip">Code Reviews</span><span class="chip">SOLID Principles</span><span class="chip">Requirement Gathering</span><span class="chip">Mentoring</span><span class="chip">Cross-Functional Collaboration</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education & Certifications -->
-    <section id="education">
+    <!-- Certifications -->
+    <section id="certifications">
       <div class="eyebrow reveal">Learning</div>
-      <h2 class="reveal">Education &amp; certifications.</h2>
-      <div class="duo" style="margin-top: 40px;">
-        <div class="card reveal">
-          <div class="meta">2017 — 2021</div>
-          <h3>B.E. Computer Engineering</h3>
-          <p>Atmiya Institute of Technology and Science<br />Gujarat Technological University (GTU)</p>
-          <div class="big-num">8.76</div><small>CGPA out of 10</small>
-        </div>
-        <div class="card reveal">
-          <div class="meta">Anthropic Academy</div>
-          <h3>Claude Partner Network Learning Path</h3>
-          <p>Hands-on training in applying AI-assisted workflows to real software delivery.</p>
-          <ul class="cert-list">
-            <li><span class="check">✓</span>Claude 101</li>
-            <li><span class="check">✓</span>Claude Code 101</li>
-            <li><span class="check">✓</span>Claude Code in Action</li>
-          </ul>
-        </div>
+      <h2 class="reveal">Certifications.</h2>
+      <div class="card reveal" style="margin-top: 40px;">
+        <div class="meta">Anthropic Academy</div>
+        <h3>Claude Partner Network Learning Path</h3>
+        <p>Hands-on training in applying AI-driven workflows to real software delivery.</p>
+        <ul class="cert-list cert-row">
+          <li><span class="check">✓</span>Claude 101</li>
+          <li><span class="check">✓</span>Claude Code 101</li>
+          <li><span class="check">✓</span>Claude Code in Action</li>
+        </ul>
       </div>
     </section>
 
@@ -530,7 +530,6 @@
   <footer>
     <div class="container">
       <span>© 2026 Nikunj Ramoliya</span>
-      <span>Built with Java-grade attention to detail.</span>
     </div>
   </footer>
 
