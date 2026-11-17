@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikunj Ramoliya — Senior Java & Full-Stack Engineer</title>
-  <meta name="description" content="Nikunj Ramoliya — Senior Java & Full-Stack Software Engineer with 5.6+ years building secure SaaS platforms with Java, Spring Boot, React and AWS." />
+  <title>Nikunj Ramoliya — Senior Java Engineer</title>
+  <meta name="description" content="Nikunj Ramoliya — Senior Java Engineer with 5.6+ years building secure SaaS platforms with Java, Spring Boot, React and AWS." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -105,11 +105,17 @@
       background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
     }
     .hero .role {
-      font-family: var(--mono); color: var(--accent); font-size: 1rem; margin: 22px 0 18px;
+      display: inline-flex; align-items: center; gap: 10px; margin-top: 26px;
+      font-family: var(--display); font-size: 1.35rem; font-weight: 600; color: var(--text);
     }
-    .hero .role .caret { display: inline-block; width: 9px; height: 1.1em; background: var(--accent); vertical-align: -3px; margin-left: 4px; animation: blink 1s steps(1) infinite; }
+    .hero .role::before { content: ""; width: 28px; height: 2px; background: var(--grad); }
+    .highlights { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .highlights span {
+      font-size: 0.85rem; font-weight: 500; color: #c7d2fe; padding: 7px 14px; border-radius: 999px;
+      background: rgba(129, 140, 248, 0.1); border: 1px solid rgba(129, 140, 248, 0.25);
+    }
     @keyframes blink { 50% { opacity: 0; } }
-    .hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 720px; margin-top: 28px; }
+    .hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 640px; margin-top: 14px; }
     .hero p.lead strong { color: var(--text); font-weight: 600; }
 
     .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
@@ -328,13 +334,25 @@
     <!-- Hero -->
     <header class="hero">
       <h1>Hi, I'm Nikunj.<br /><span class="grad">I build SaaS that scales.</span></h1>
+      <div class="role">Senior Java Engineer</div>
       <p class="lead">
-        <strong>5.6+ years</strong> designing secure, maintainable SaaS platforms across <strong>FinOps</strong>, <strong>CRM</strong>, <strong>call/lead management</strong> and <strong>ticket management</strong>. I build <strong>Java &amp; Spring Boot microservices</strong> and React dashboards, handle <strong>AWS deployment &amp; CI/CD</strong>, <strong>lead and mentor engineering teams</strong>, work with <strong>cross-functional teams</strong> to deliver features end to end, and use <strong>AI-driven development</strong> with Claude Code to ship faster. Based in Ahmedabad, India.
+        <strong>5.6+ years</strong> building secure, scalable SaaS platforms with Java, Spring Boot, React and AWS. Based in Ahmedabad, India.
       </p>
+      <div class="highlights">
+        <span>Microservices &amp; System Design</span>
+        <span>AWS Deployment &amp; CI/CD</span>
+        <span>Team Leadership</span>
+        <span>Cross-Functional Delivery</span>
+        <span>AI-Driven Development</span>
+      </div>
       <div class="cta">
         <a href="#contact" class="btn btn-primary">
           Get in touch
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="Nikunj_Ramoliya_Resume.pdf" download class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Resume
         </a>
         <a href="https://www.linkedin.com/in/nikunj-ramoliya" target="_blank" rel="noopener" class="btn btn-ghost">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
@@ -437,9 +455,12 @@
             <strong>Product &amp; Ticket Management System</strong><span>Support &amp; Issue Tracking Platform</span>
           </div>
           <ul>
-            <li>Built features for managing products and handling support tickets end to end: creation, assignment, status tracking and resolution.</li>
-            <li>Developed backend services and REST APIs in Java and Spring Boot to keep ticket workflows reliable for internal and client teams.</li>
-            <li>Built the user interface in React JS for creating, tracking and managing products and tickets.</li>
+            <li>Built a platform for managing products and handling support tickets end to end: creation, assignment, prioritisation, status tracking and resolution.</li>
+            <li>Developed backend services and REST APIs in Java and Spring Boot for ticket workflows, product records and user management.</li>
+            <li>Implemented role-based access so admins, agents and clients each see and act on only the tickets relevant to them.</li>
+            <li>Added priority levels, status workflows and email notifications to keep tickets moving and teams informed.</li>
+            <li>Built the React JS interface with dashboards, search and filters for creating, tracking and managing products and tickets.</li>
+            <li>Kept a full ticket history with comments and updates for traceability between support and engineering.</li>
           </ul>
           <div class="tags">
             <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React JS</span><span class="tag">REST APIs</span>
@@ -468,9 +489,21 @@
           <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">VMUI (timeseries)</span></div>
         </div>
         <div class="card skill-group reveal">
-          <h3>Cloud &amp; Tools</h3>
+          <h3>AWS Cloud</h3>
           <div class="chips">
-            <span class="chip">AWS S3</span><span class="chip">Lambda</span><span class="chip">SQS</span><span class="chip">CloudWatch</span><span class="chip">Step Functions</span><span class="chip">SNS</span><span class="chip">Athena</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Postman</span><span class="chip">Claude Code</span><span class="chip">AI-Driven Development</span>
+            <span class="chip">S3</span><span class="chip">Lambda</span><span class="chip">SQS</span><span class="chip">SNS</span><span class="chip">Athena</span><span class="chip">CloudWatch</span><span class="chip">Step Functions</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Monitoring, DevOps &amp; Tools</h3>
+          <div class="chips">
+            <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Git</span><span class="chip">Postman</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>AI-Driven Development</h3>
+          <div class="chips">
+            <span class="chip">Claude Code</span><span class="chip">AI-Assisted Debugging</span><span class="chip">AI-Assisted Code Review</span>
           </div>
         </div>
         <div class="card skill-group reveal">
